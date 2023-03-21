@@ -8,9 +8,30 @@ import Search from '../pages/Search/index.vue';
 
 export default new VueRouter({
   routes: [
-    { path: '/home', component: Home },
-    { path: '/login', component: Login },
-    { path: '/Register', component: Register },
-    { path: '/Search', component: Search },
+    {
+      path: '/home',
+      component: Home,
+      meta: { show: true },
+    },
+    {
+      path: '/login',
+      component: Login,
+      meta: { show: false },
+    },
+    {
+      path: '/register',
+      component: Register,
+      meta: { show: false },
+    },
+    {
+      path: '/search/:keywords?',
+      name: 'search',
+      component: Search,
+      meta: { show: true },
+    },
+    {
+      path: '*',
+      redirect: '/home',
+    },
   ],
 });

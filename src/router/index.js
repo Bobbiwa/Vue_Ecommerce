@@ -7,6 +7,7 @@ import Register from '../pages/Register/index.vue';
 import Search from '../pages/Search/index.vue';
 
 export default new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/home',
@@ -30,7 +31,7 @@ export default new VueRouter({
       meta: { show: true },
     },
     {
-      path: '*',
+      path: '/',
       redirect: '/home',
     },
   ],

@@ -10,47 +10,41 @@
       <div class="content">
         <label>手机号:</label>
         <input type="text"
-               placeholder="请输入你的手机号"
-               v-model="phone" />
+               placeholder="请输入你的手机号" />
         <span class="error-msg">错误提示信息</span>
       </div>
       <!-- 验证码 -->
       <div class="content">
         <label>验证码:</label>
         <input type="text"
-               placeholder="请输入验证码"
-               v-model="code" />
-        <button style="height: 38px"
-                @click="getCode">获取验证码</button>
+               placeholder="请输入验证码" />
+        <button style="height: 38px">获取验证码</button>
         <span class="error-msg">错误提示信息</span>
       </div>
       <!-- 登录密码 -->
       <div class="content">
         <label>登录密码:</label>
         <input type="text"
-               placeholder="请输入你的登录密码"
-               v-model="password" />
+               placeholder="请输入你的登录密码" />
         <span class="error-msg">错误提示信息</span>
       </div>
       <!-- 确认密码 -->
       <div class="content">
         <label>确认密码:</label>
         <input type="text"
-               placeholder="请输入确认密码"
-               v-model="password1" />
+               placeholder="请输入确认密码" />
         <span class="error-msg">错误提示信息</span>
       </div>
       <!-- 勾选协议 -->
       <div class="controls">
         <input name="m1"
-               type="checkbox"
-               :checked="agree" />
+               type="checkbox" />
         <span>同意协议并注册《尚品汇用户协议》</span>
         <span class="error-msg">错误提示信息</span>
       </div>
       <!-- 注册按钮 -->
       <div class="btn">
-        <button @click="register">完成注册</button>
+        <button>完成注册</button>
       </div>
     </div>
 

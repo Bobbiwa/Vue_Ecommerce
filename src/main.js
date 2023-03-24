@@ -6,7 +6,7 @@ import store from '@/store';
 
 Vue.config.productionTip = false;
 
-//register global navigation component
+//注册全局路由组件
 Vue.component('Nav', Nav);
 
 new Vue({

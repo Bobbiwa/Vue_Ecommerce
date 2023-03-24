@@ -1696,9 +1696,8 @@
 import { queryNavList } from '@/api/home'
 export default {
   mounted() {
-    console.log('innnnn');
-    queryNavList().then((data)=>{
-      console.log(data);
+    queryNavList().then((res)=>{
+      console.log(res.data.data);
     },()=>{})
   }
 }

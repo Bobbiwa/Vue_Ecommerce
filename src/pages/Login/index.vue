@@ -21,14 +21,12 @@
               <div class="input-text clearFix">
                 <span></span>
                 <input type="text"
-                       placeholder="邮箱/用户名/手机号"
-                       v-model="phone" />
+                       placeholder="邮箱/用户名/手机号" />
               </div>
               <div class="input-text clearFix">
                 <span class="pwd"></span>
                 <input type="text"
-                       placeholder="请输入密码"
-                       v-model="password" />
+                       placeholder="请输入密码" />
               </div>
               <div class="setting clearFix">
                 <label class="checkbox inline">

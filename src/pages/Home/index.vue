@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 全局路由组件 -->
     <Nav />
     <Carousel />
     <Recommend />

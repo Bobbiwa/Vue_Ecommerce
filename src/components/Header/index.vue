@@ -39,10 +39,16 @@
           <input type="text"
                  id="autocomplete"
                  class="input-error input-xxlarge"
-                 v-model="keywords" />
-          <button class="sui-btn btn-xlarge btn-danger"
+                 v-model="keywords"
+                 v-show="$route.meta.show" />
+          <button class="
+                 sui-btn
+                 btn-xlarge
+                 btn-danger"
                   type="button"
-                  @click="handleSearch">
+                  @click="handleSearch"
+                  v-show="
+                  $route.meta.show">
             搜索
           </button>
         </form>
@@ -61,8 +67,8 @@ export default {
   methods: {
     handleSearch() {
       this.$router.push({ name: 'search', params: { keywords: this.keywords || undefined } }, () => { }, () => { })
-    }
-  }
+    },
+  },
 }
 </script>
 

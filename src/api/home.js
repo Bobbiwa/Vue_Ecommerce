@@ -1,3 +1,3 @@
 import request from './request';
 
-export const queryNavList = () => request.get('/product/getBaseCategoryList');
+export const reqNavList = () => request.get('/product/getBaseCategoryList');

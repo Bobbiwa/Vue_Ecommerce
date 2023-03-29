@@ -1,10 +1,14 @@
 <template>
-  <div>ser</div>
+  <Nav />
 </template>
 
 <script>
 export default {
-
+  data() { 
+    return {
+      params:this.$route.params
+    }
+  }
 }
 </script>
 
